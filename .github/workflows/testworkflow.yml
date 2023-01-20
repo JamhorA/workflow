@@ -45,6 +45,7 @@ jobs:
       uses: actions/download-artifact@v3.0.2
       with:
         name: Mitt-test-resultat
+        path: /home/runner/work/workflow/workflow/TestProject1/TestResults
         
     - name: Check Test Results
       run: |
