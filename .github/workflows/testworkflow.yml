@@ -31,9 +31,10 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: Mitt-test-resultat
+        path: /TestResults
         
   approve:  
-
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
