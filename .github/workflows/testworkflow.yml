@@ -49,7 +49,7 @@ jobs:
         
     - name: Check Test Results
       run: |
-        if grep -q "Failed=0" /home/runner/work/workflow/workflow/TestProject1/TestResults/TestResults.trx 
+        if grep -q "Passed=10" TestResults.trx 
         then
           echo "All looks well"
           exit 0
